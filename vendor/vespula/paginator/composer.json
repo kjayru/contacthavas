@@ -1,0 +1,32 @@
+{
+    "name": "vespula/paginator",
+    "description": "A package that creates simple pagination links. No reliance on ORMs or arrays. Has a generic, bootstrap, and foundation adapters.",
+    "authors": [{
+        "name": "Jon Elofson",
+        "email": "jon.elofson@gmail.com",
+        "role": "Developer"
+    }],
+    "license": "MIT",
+    "keywords": ["pagination", "paginate"],
+    "homepage": "https://bitbucket.org/jelofson/vespula.paginator",
+
+    "require": {
+        "php": ">=5.4",
+        "psr/http-message": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*",
+        "zendframework/zend-diactoros": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vespula\\Paginator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vespula\\Paginator\\": "tests/"
+        }
+    }
+
+}
