@@ -24,16 +24,16 @@
         "text/html", $body
     );
 
-    $sendgrid = new \SendGrid('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');
+    $sendgrid = new \SendGrid(env('API_KEY'));
 
     try {
         $response = $sendgrid->send($email);
-        print $response->statusCode() . "\n";
-        print_r($response->headers());  
-        print $response->body() . "\n";
+       // print $response->statusCode() . "\n";
+       // print_r($response->headers());  
+       // print $response->body() . "\n";
        
     } catch (Exception $e) {
-        echo 'Caught exception: '. $e->getMessage() ."\n";
+       // echo 'Caught exception: '. $e->getMessage() ."\n";
     }
 
 
@@ -52,6 +52,6 @@
         $id = $db->insert ('contactos', $data);
         echo json_encode(array( 'rpta' => 'ok' ));
 	}catch(Exception $e){
-		echo 'Caught exception: ', $e->getMessage();
+		//echo 'Caught exception: ', $e->getMessage();
 	}
 	
