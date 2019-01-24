@@ -1,3 +1,112 @@
+body{
+    font-family: "Helvetica Neue LT Roman",sans-serif;
+}
 div#map {
     height: 400px;
 } 
+.footer {
+    padding: 120px 0 20px 0;
+}
+.header{
+    padding-bottom: 50px;
+}
+div#contacto {
+    padding: 10px 0 50px;
+}
+.btn-contact {
+    color: #00aed0;
+    border-color: #00aed0;
+}
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+    
+    
+    font-weight: 100;
+}
+.logofooter a {
+    width: 109px;
+    display: block;
+}
+.btn-contact  {
+    
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#frm-contact input {
+   
+    height: 50px;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 0px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-size: 20px;
+}
+#frm-contact textarea {
+   
+    height:220px;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    padding: 0px 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-size: 20px;
+}
+.gracias p{
+  
+        font-size: 27px;
+        text-align: center;
+        padding-top: 100px;
+
+}
+iframe{
+    width:100%;
+}
+#contacto h1 {
+    padding-left: 14px;
+}
+@media(max-width:779px){
+    .navbar-brand img{
+        max-width:120px;
+    }
+    
+    .logofooter{
+        max-width:120px;
+    }
+    form#frm-contact {
+        padding-bottom: 60px;
+    }
+    button.btn.btn-default.btn-contact {
+        width: 100%;
+    }
+    div#contacto {
+        padding: 10px 0 50px;
+        text-align: center;
+    }
+    .gracias p {
+        font-size: 27px;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 100px;
+    }
+    
+}
+
+@media(min-width:780px){
+    .navbar-brand img{
+        max-width:200px;
+    }
+}
